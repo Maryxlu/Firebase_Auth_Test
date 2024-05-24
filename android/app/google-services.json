@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "914118093330",
+    "project_id": "copper-aloe-335118",
+    "storage_bucket": "copper-aloe-335118.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914118093330:android:9bcfc321ce3382248686cb",
+        "android_client_info": {
+          "package_name": "com.firebase_auth_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914118093330-5i4f1dsp7m1ppq55pdg2l6jh2n3e9m01.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firebase_auth_test",
+            "certificate_hash": "2ae7299ea08ab2baaaadc8f425211423aa25704e"
+          }
+        },
+        {
+          "client_id": "914118093330-1oc0bjp5erjv47t0vbe49834jtulqih3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABWXQ1LUoHHF-A5kLQqCqGhRRyVGicBCQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914118093330-1oc0bjp5erjv47t0vbe49834jtulqih3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "914118093330-mrudmfoesd7t7kirla3i0mp2e7r3e9el.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.org.daissen.zendaissen",
+                "app_store_id": "1528386564"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
