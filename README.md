@@ -47,6 +47,8 @@ yarn add @react-native-google-signin/google-signin
 npm install --save @react-native-firebase/auth
 
 12- Adicionei linhas de código e um botão que receberá os metódos 
+index.js
+App.tsx
 
 13- Rodei o APP 
 E funcionou yipeee!!!
