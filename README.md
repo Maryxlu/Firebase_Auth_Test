@@ -68,4 +68,5 @@ npx react-native start
 error Failed to install the app. Command failed with EACCES: ./gradlew app:installDebug -PreactNativeDevServerPort=8081
 spawn ./gradlew EACCES.
 
-DO:chmod 755 android/gradlew
+Resolver no cmd:
+chmod 755 android/gradlew
