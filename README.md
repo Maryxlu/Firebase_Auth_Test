@@ -61,3 +61,11 @@ Para rodar o app simplesmente:
 ```bash
 npx react-native start
 ```
+
+## Bugs conhecidos:
+
+- ERRO NO LINUX:
+error Failed to install the app. Command failed with EACCES: ./gradlew app:installDebug -PreactNativeDevServerPort=8081
+spawn ./gradlew EACCES.
+
+DO:chmod 755 android/gradlew
