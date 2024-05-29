@@ -8,8 +8,8 @@
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import { Button } from 'react-native';
-import auth from '@react-native-firebase/auth';
-import { GoogleSignin } from '@react-native-google-signin/google-signin';
+import auth from '@react-native-firebase/auth'; //firebase
+import { GoogleSignin } from '@react-native-google-signin/google-signin'; //firebase
 
 import {
   SafeAreaView,
@@ -91,8 +91,10 @@ function App(): React.JSX.Element {
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
-      />
-        <Text>Implementação do Google Sign in</Text> 
+      /> 
+        {// Firebase
+        }
+        <Text>Implementação do Google Sign in</Text>
         <Button title="Google Sign-In" onPress={() => onGoogleButtonPress().then(() => console.log('Signed in with Google!'))}/>
     </SafeAreaView>
   );
