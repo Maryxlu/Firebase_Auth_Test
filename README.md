@@ -1,84 +1,63 @@
-<<<<<<< HEAD
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+### Passo a passo dos procedimentos:
 
-# Getting Started
+```txt
+1- instalei template com o 
+npx react-native init Firebase_Auth_Test
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+2- mudei a versão do gradle em 
+android\gradle\wrapper\gradle-wrapper.properties
+de 8.6 para 8.5
 
-## Step 1: Start the Metro Server
+3- iniciei a aplicação 
+npx react-native start
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+4- após esperar funcionou
 
-To start Metro, run the following command from the _root_ of your React Native project:
+---DESENVOLVENDO A APLICAÇÃO---
 
-```bash
-# using npm
-npm start
+5- Baixei o Firebase-Tools (emulador de firebase)(para ajudar em debugging (apesar de ser inutil pois temos o firebase))
+npm install -g firebase-tools
 
-# OR using Yarn
-yarn start
+6- Instalei o react native firebase (A biblioteca do Firebase)
+npm install --save @react-native-firebase/app
+
+7- Eu registrei as chaves SHA1 e SHA256
+cd android && ./gradlew signingReport
+
+(No Firebase Criei um APP novo android e inseri a chave SHA1)
+
+(No Firebase Após criado o APP eu baixei o google-services.json)
+<android\app\google-services.json> (local)
+
+8- Configurei os build.gradle com as configurações android diretamente do Firebase
+android\build.gradle
+android\app\build.gradle
+
+( pra evitar erros renomeei o nome do pacote em 
+android\app\google-services.json )
+9- Reconstruir app com os arquivos novos
+ npx react-native run-android
+
+10- Adicionar a biblioteca google react native: sign-in 
+https://react-native-google-signin.github.io/docs/install#installing <-local
+comando:
+yarn add @react-native-google-signin/google-signin
+
+11- Importei a biblioteca de autenticação
+npm install --save @react-native-firebase/auth
+
+12- Adicionei linhas de código e um botão que receberá os metódos 
+index.js
+App.tsx
+
+13- Rodei o APP 
+E funcionou yipeee!!!
 ```
 
-## Step 2: Start your Application
+## Como rodar no seu app
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
+Para rodar o app simplesmente:
 
 ```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
+npx react-native start
 ```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-=======
-# Firebase_Auth_Test
-Teste de Autenticação com o Firebase pela Google e Facebook
->>>>>>> b6cd7d38f28a68d3229f856c648d1bf32e471bd7
