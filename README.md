@@ -25,6 +25,7 @@ npm install --save @react-native-firebase/app
 cd android && ./gradlew signingReport
 
 (No Firebase Criei um APP novo android e inseri a chave SHA1)
+(LEMBRE-SE DE COLOCAR TODAS AS CHAVES!!!)
 
 (No Firebase Após criado o APP eu baixei o google-services.json)
 <android\app\google-services.json> (local)
