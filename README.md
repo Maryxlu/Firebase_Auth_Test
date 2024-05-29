@@ -20,6 +20,7 @@ npm install -g firebase-tools
 
 6- Instalei o react native firebase (A biblioteca do Firebase)
 npm install --save @react-native-firebase/app
+(yarn) yarn add @react-native-firebase/app 
 
 7- Eu registrei as chaves SHA1 e SHA256
 cd android && ./gradlew signingReport
@@ -41,6 +42,7 @@ android\app\google-services.json )
 10- Adicionar a biblioteca google react native: sign-in 
 https://react-native-google-signin.github.io/docs/install#installing <-local
 comando:
+yarn add @react-native-firebase/app
 yarn add @react-native-google-signin/google-signin
 
 11- Importei a biblioteca de autenticação
@@ -61,3 +63,11 @@ Para rodar o app simplesmente:
 ```bash
 npx react-native start
 ```
+
+## Bugs conhecidos:
+
+- ERRO NO LINUX:
+error Failed to install the app. Command failed with EACCES: ./gradlew app:installDebug -PreactNativeDevServerPort=8081
+spawn ./gradlew EACCES.
+
+DO:chmod 755 android/gradlew
