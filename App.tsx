@@ -66,7 +66,11 @@ FIREBASE Processo
 */
 async function onGoogleButtonPress() {
   // Check if your device supports Google Play
-  await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true });
+  await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true }).catch(
+    (err:any) => {
+      console.log(err)
+    }
+  );
   // Get the users ID token
   const { idToken } = await GoogleSignin.signIn();
 
@@ -95,7 +99,14 @@ function App(): React.JSX.Element {
         {// Firebase
         }
         <Text>Implementação do Google Sign in</Text>
-        <Button title="Google Sign-In" onPress={() => onGoogleButtonPress().then(() => console.log('Signed in with Google!'))}/>
+        <Button title="Google Sign-In" onPress={() => 
+          onGoogleButtonPress().then((response) => {
+            console.log(response)
+          }).catch((err: any) => {
+            console.log(err)
+          })
+            
+          }/>
     </SafeAreaView>
   );
 }
