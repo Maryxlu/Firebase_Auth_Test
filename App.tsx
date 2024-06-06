@@ -13,7 +13,6 @@ import { GoogleSignin } from '@react-native-google-signin/google-signin'; //fire
 
 import {
   SafeAreaView,
-  ScrollView,
   StatusBar,
   StyleSheet,
   Text,
@@ -23,10 +22,6 @@ import {
 
 import {
   Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
 type SectionProps = PropsWithChildren<{
